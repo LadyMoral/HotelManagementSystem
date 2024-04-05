@@ -27,20 +27,17 @@
                 IsBooked = false;
             }
         }
-
         public class Hotel
         {
             public string Name { get; }
             public string Location { get; }
             private List<HotelRoom> Rooms { get; }
-
             public Hotel(string name, string location, List<HotelRoom> rooms)
             {
                 Name = name;
                 Location = location;
                 Rooms = rooms;
             }
-
             public void DisplayAvailableRooms()
             {
                 Console.WriteLine($"Hotel {Name} - Available Rooms");
@@ -52,7 +49,6 @@
                     }
                 }
             }
-
             public void DisplayBookedRooms()
             {
                 Console.WriteLine($"Hotel {Name} - Booked Rooms");
@@ -65,7 +61,6 @@
                 }
             }
         }
-
         public abstract class User
         {
             public string Name { get; }
